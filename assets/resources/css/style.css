@@ -1,0 +1,378 @@
+/* ==============================
+BASIC SETUP
+=================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ======= html, body =======  */
+
+html,
+body {
+    background-color: #F3F3F3;
+    color: #555;
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Oleo Script', cursive;
+    font-family: 'Teko', sans-serif; */
+    font-family: 'Open Sans', 'Oleo Script', 'Teko';
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+}
+
+
+/* ======= Reusable content =======  */
+
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+.button {
+    width: 100px;
+}
+
+
+/* ==============================
+CUSTOMIZE BOOTSTRAP
+=================================*/
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background: none;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background: none;
+}
+
+.col-md-6 {
+    position: static;
+}
+
+
+/* search bar  */
+
+.input-group {
+    position: static;
+}
+
+.input-group .form-control {
+    position: static;
+}
+
+.input-group-btn {
+    position: static;
+}
+
+.input-group-btn>.btn {
+    position: static;
+}
+
+.glyphicon {
+    position: static;
+}
+
+
+/* search bar  */
+
+
+/* form  input  */
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+/* form  input  */
+
+
+/* ==============================
+WRAPPER SECTION
+=================================*/
+
+#wrapper {
+    width: 100%;
+}
+
+
+/* ==============================
+SIDEBAR SECTION
+=================================*/
+
+.sidebar {
+    position: fixed;
+    background: #1D2B36;
+    /* width: 250px; */
+    width: 20%;
+    height: 100%;
+}
+
+#sidebar {
+    left: 0;
+    transition: all 500ms;
+}
+
+#sidebar.active {
+    /* left: -250px; */
+    left: -20%;
+}
+
+.logo {
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); */
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); */
+}
+
+.logo img {
+    width: 55%;
+    height: 60px;
+    margin-left: 23%;
+}
+
+.link:hover {
+    background: #162029;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 12px 15px 12px 42px;
+    color: #d9d9d9;
+    font-size: 90%;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion {
+    position: relative;
+    top: 50px;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 130%;
+    color: #d9d9d9;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 65%;
+    top: 15px;
+}
+
+
+/* .nav.side-menu>li.active>a {
+    text-shadow: rgba(0,0,0,.25) 0 -1px 0;
+    background: linear-gradient(#334556,#2C4257),#2A3F54;
+    box-shadow: rgba(0,0,0,.25) 0 1px 0, inset rgba(255,255,255,.16) 0 1px 0;
+} */
+
+
+/* .nav.side-menu>li.active, .nav.side-menu>li.current-page {
+    border-right: 5px solid #1ABB9C;
+} */
+
+.accordion li.open .link {
+    color: #1ABB9C;
+    background: #162029;
+    box-shadow: rgba(0, 0, 0, .25) 0 1px 0, inset rgba(255, 255, 255, .16) 0 1px 0;
+    /* box-shadow: rgba(0, 0, 0, -0.75) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0; */
+    /* border-right: 5px solid #1ABB9C; */
+    transition: all 0.3s ease;
+}
+
+.accordion li.open i {
+    color: #1ABB9C;
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/* Submenu  */
+
+.submenu {
+    display: none;
+    background: #162029;
+    font-size: 90%;
+}
+
+.submenu li {
+    /* border-bottom: 1px solid #4b4a5e; */
+    border-right: 5px solid #1ABB9C;
+    transition: all 500ms ease;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+    background: #121B22;
+    color: #d9d9d9;
+}
+
+
+/* ==============================
+PAGE CONTENT SECTION
+=================================*/
+
+#page-content {
+    width: 80%;
+    position: absolute;
+    /* left: 250px; */
+    left: 20%;
+    transition: all 500ms;
+    /* display: flex; */
+    /* align-items: stretch; */
+}
+
+#page-content.active {
+    left: 0;
+    width: 100%;
+}
+
+
+/* ==============================
+HEADER SECTION
+=================================*/
+
+.nav-section {
+    background: #fff;
+    position: fixed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12); */
+    height: 60px;
+    transition: all 0.5s ease;
+}
+
+#nav-section {
+    width: 80%;
+}
+
+#nav-section.active {
+    width: 100%;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 15px;
+    font-size: 140%;
+    color: #555;
+    left: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.nav-section.sticky {
+    /* background: rgba(211, 84, 0, 0.9); */
+    background: #fff;
+    height: 55px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.nav-section.sticky .toggle-btn {
+    top: 10px;
+}
+
+.nav-section.sticky #user {
+    margin-top: -5px;
+}
+
+.user {
+    overflow: hidden;
+}
+
+.user li a {
+    padding: 8px;
+}
+
+.user li a i {
+    padding: 0px 10px;
+}
+
+.admin {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+}
+
+.admin i {
+    position: absolute;
+    right: -7px;
+    bottom: 2px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #eceeef;
+    border-radius: 100%;
+}
+
+.admin img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    border-radius: 1000px;
+}
+
+.admin-online i {
+    background-color: #37BC9B;
+    margin-right: 5px;
+}
+
+
+/* ==============================
+CONTENT SECTION
+=================================*/
+
+.content {
+    background: #fff;
+    margin: 80px 20px 0px 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+.x-panel {
+    width: 100%;
+}
+
+.search {
+    margin-bottom: 20px;
+}

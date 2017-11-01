@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Rasel, Momit">
+    <title>Student Result Monitoring System</title>
+
+    <!-- Font Awesome -->
+    <link href="assets/vendors/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap vendors -->
+    <link href="assets/vendors/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS   -->
+    <link href="assets/resources/css/style.css" rel="stylesheet">
+
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!--========= Sidebar part start here =========-->
+        <section class="sidebar" id="sidebar">
+            <!--logo  -->
+            <div class="logo">
+                <a href="index.html"><img src="assets/resources/img/logo.png" alt="logo"></a>
+            </div>
+            <!--/logo  -->
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link"><i class="fa fa-database"></i>Registration<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="input-registration.html">Registration Student</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-code"></i>Entry<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="search-info.html">Mark Entry</a></li>
+                        <li><a href="#">Extra Curricular Activities</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-mobile"></i>Show<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#">Result</a></li>
+                        <li><a href="#">Extra Curricular Activities</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-globe"></i>Other's<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="#">Add Subject</a></li>
+                        <li><a href="#">Add Extra Curricular</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.accordion  -->
+        </section>
+        <!--========= Sidebar part End here =========-->
+
+
+        <!--page-content  -->
+        <div id="page-content">
+
+            <!--========= Heading part start here =========-->
+            <header>
+                <nav class="nav-section" id="nav-section">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                        </div>
+                        <!-- Header Toggle  -->
+                        <div class="navbar-header" id="sidebarCollapse">
+                            <div class="toggle-btn">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right ">
+                                <li class="dropdown ">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="admin admin-online">
+                                        <img src="assets/resources/img/admin.png" alt="admin"><i></i>
+                                    </span> Admin <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu user">
+                                        <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a></li>
+                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Account</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!--========= Heading part End here =========-->
+
+            <!--========= Content part Start here =========-->
+            <div class="content">
+                <!--breadcrumb  -->
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li class="active">Data</li>
+                </ol>
+                <!--/ .breadcrumb  -->
+
+                <!--search  -->
+                <div class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                        <a href="check-info.html" class="btn btn-success " role="button"> 
+                            <span class="glyphicon glyphicon-search" aria-hidden="true">
+                            <span>Search</span>
+                        </a>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!--/.search  -->
+
+
+            </div>
+            <!--========= Content part End here =========-->
+
+        </div>
+        <!-- /.page-content  -->
+
+    </div>
+    <!--/ #wrapper  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="assets/vendors/js/popper.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--Smooth Transition  -->
+    <script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"></script>
+    <!-- Year selection dropdown   -->
+    <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
+    <!--Custom JS  -->
+    <script type="text/javascript " src="assets/resources/js/script.js "></script>
+
+
+
+
+
+</body>
+
+</html>
