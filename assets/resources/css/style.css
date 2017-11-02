@@ -24,9 +24,6 @@ body {
     width: 100%;
 }
 
-
-/* ======= Reusable content =======  */
-
 ul {
     list-style-type: none;
 }
@@ -37,9 +34,42 @@ a:hover {
     color: #555;
 }
 
+
+/* ======= Button =======  */
+
 .button {
     width: 100px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    transition: all 250ms;
 }
+
+.button:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12), 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
+}
+
+.button-green {
+    background: #1fa08e;
+    color: #ffffff;
+}
+
+.button-green:hover {
+    background: #23b5a1;
+    color: #ffffff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12), 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
+}
+
+
+/* ======= Reusable content =======  */
+
+
+/* bellow all panel-content */
+
+.panel-content {
+    width: 100%;
+}
+
+
+/* bellow all panel-content */
 
 
 /* ==============================
@@ -376,3 +406,45 @@ CONTENT SECTION
 .search {
     margin-bottom: 20px;
 }
+
+
+/* subject-list page start */
+
+.searchable-container {
+    margin: 20px 0px 0 0;
+}
+
+.searchable-container label.btn-default.active {
+    background-color: #007ba7;
+    color: #FFF
+}
+
+.searchable-container label.btn-default {
+    width: 90%;
+    border: 1px solid #efefef;
+    margin: 5px;
+    box-shadow: 5px 8px 8px 0 #ccc;
+}
+
+.searchable-container label .bizcontent {
+    width: 100%;
+}
+
+.searchable-container .btn-group {
+    width: 90%
+}
+
+.searchable-container .btn span.glyphicon {
+    opacity: 0;
+}
+
+.searchable-container .btn.active span.glyphicon {
+    opacity: 1;
+}
+
+.subject-section {
+    margin-bottom: 45px;
+}
+
+
+/* subject-list page end */

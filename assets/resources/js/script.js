@@ -71,7 +71,6 @@ $(function() {
 
 
 // Only Year Selection
-
 $(document).ready(function(e) {
     $('.yearselect').yearselect();
 
@@ -81,5 +80,16 @@ $(document).ready(function(e) {
     });
     $('.yrselectasc').yearselect({
         order: 'asc'
+    });
+});
+
+// auto search in subject-list page
+$(function() {
+    $('#search').on('keyup', function() {
+        var pattern = $(this).val();
+        $('.searchable-container .items').hide();
+        $('.searchable-container .items').filter(function() {
+            return $(this).text().match(new RegExp(pattern, 'i'));
+        }).show();
     });
 });

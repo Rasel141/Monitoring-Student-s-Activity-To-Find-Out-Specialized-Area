@@ -14,7 +14,7 @@ and open the template in the editor.
     <title>News Portal</title>
 
     <!-- Bootstrap v3.3.7 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
     <!----here css file link hrer --->
     <link rel="stylesheet" href="css/style.css" />
@@ -22,276 +22,80 @@ and open the template in the editor.
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+    <style>
+        .btn {
+            display: inline-block;
+            height: 48px;
+            background: #dbdcd7;
+            color: #0e403c !important;
+            border: none;
+            padding: 0 15px;
+            text-align: left;
+            line-height: 48px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            /* border-radius: 5px; */
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 2px;
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+            transition: all 250ms;
+            vertical-align: middle;
+        }
+        
+        .btn.btn-small {
+            font-size: 14px;
+            line-height: 32px;
+            height: 32px;
+            padding: 0 10px;
+        }
+        
+        .btn-green {
+            background: #1fa08e;
+            color: #ffffff !important;
+        }
+        
+        a {
+            color: #1fa194;
+            text-decoration: none;
+        }
+        
+        a {
+            background: transparent;
+        }
+        
+        .btn:hover {
+            color: #0e403c;
+            background: #e7e8e5;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12), 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
+        }
+        
+        .btn-green:hover {
+            color: #ffffff;
+            background: #23b5a1;
+        }
+        
+        body {
+            background: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            background-image: url(background.png);
+        }
+    </style>
 </head>
 
+
 <body>
-    <header>
-        <div class="container main-content">
-            <div class="row">
-                <div class="logo col-lg-6">
-                    <a href="index.php">
-                        <img src="images/logo2.png" alt="logo" />
-                    </a>
-                </div>
-                <div class="date col-lg-6">
-                    <p id="demo"></p>
-                    <script>
-                        document.getElementById("demo").innerHTML = Date();
-                    </script>
-                    <hr />
-                    <div class="add">
-                        <h1>Add</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Navbar start here --->
-        <div class="navbar navbar-default menu">
-            <nav class="container menu-items">
-                <div class="navbar-header" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <button type="button" class="navbar-toggle collapsed navbar-toggle-center" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                            <span class="navmenu">MENU</span>
-                        </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-nav-justified menu-items-contents" id="bs-example-navbar-collapse-1">
-                    <ul class="nav nav-pills nav-justified">
-                        <li><a href="#">নীড়পাতা</a></li>
-                        <li><a href="#">রাজনীতি</a></li>
-                        <li><a href="#">সারা বাংলা</a></li>
-                        <li><a href="#">অর্থনীতি</a></li>
-                        <li><a href="#">আন্তর্জাতিক</a></li>
-                        <li><a href="#">খেলা</a></li>
-                        <li><a href="#">বিনোদন</a></li>
-                        <li><a href="#">ফিচার</a></li>
-                        <li><a href="#">আজব নিউজ</a></li>
-                        <li><a href="#">কলাম</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- News Content start here -->
-    <div class="news">
-        <div class="container">
-            <div class="row">
-                <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ News Protal Left Part start here @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                <div class="news-content col-lg-6">
-                    <div class="neweses">
-                        <a href="#">
-                            <h2>ফেসবুক থেকে মুখ ফিরিয়েছেন রসরাজ</h2>
-                        </a>
-                        <img src="images/p1.jpg" alt="" class="img-responsive" />
-                        <a href="#" class="news-heading">
-                            <h4>এক বছর আগে এই দিনে নাসিরনগর উপজেলার হরিপুর ইউনিয়নের বালিঙ্গা বিল থেকে দুপুরে বাড়ি ফেরেন রসরাজ দাস। ফেসবুকে ধর্মীয় অবমাননাকর পোস্টের ..........</h4>
-                        </a>
-                    </div>
-
-                    <!-- Sokaridol birodhidol part start here-->
-                    <div class="sorkaridol-birodhidol">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <h2 class="text-center">সরকারী দল</h2>
-                                    <div class="thumbnail thumbnail-content">
-                                        <img src="images/obaidulkader.jpg" alt="kader">
-                                        <div class="caption text">
-                                            <h4>খালেদা বিশৃঙ্খলা সৃষ্টির পাঁয়তারা করছেন: কাদের</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <h2 class="text-center">বিরোধী দল</h2>
-                                    <div class="thumbnail thumbnail-content">
-                                        <img src="images/bnp.jpg" alt="bmp">
-                                        <div class="caption text">
-                                            <h4>কক্সবাজারে পৌঁছেছেন খালেদা জিয়া</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sokaridol birodhidol part end here-->
-                </div>
-                <!--@@@@@@@@@@@@@ News Protal Left Part end here @@@@@@@@@@@@@@@@-->
-
-
-
-                <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$  News Protal Right part start here $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <!-- Mot-Demot part start here -->
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="mot-dimot">
-                                    <h2 class="text-center">মত-দ্বিমত</h2>
-                                    <div class="motamot-contents">
-                                        <div class="m-contents">
-                                            <div class="col-lg-4">
-                                                <a href="#">
-                                                    <img src="images/khaleda.jpg" alt="khaleda" class="img-circle" />
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 m-contents-likha">
-                                                <a href="#">রোহিঙ্গাদের দীর্ঘদিন রাখা সম্ভব নয়: খালেদা জিয়া</a>
-                                            </div>
-                                        </div>
-                                        <div class="m-contents">
-                                            <div class="col-lg-4">
-                                                <a href="#">
-                                                    <img src="images/khaleda.jpg" alt="khaleda" class="img-circle" />
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 m-contents-likha">
-                                                <a href="#">রোহিঙ্গাদের দীর্ঘদিন রাখা সম্ভব নয়: খালেদা জিয়া</a>
-                                            </div>
-                                        </div>
-                                        <div class="m-contents">
-                                            <div class="col-lg-4">
-                                                <a href="#">
-                                                    <img src="images/khaleda.jpg" alt="khaleda" class="img-circle" />
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 m-contents-likha">
-                                                <a href="#">রোহিঙ্গাদের দীর্ঘদিন রাখা সম্ভব নয়: খালেদা জিয়া</a>
-                                            </div>
-                                        </div>
-                                        <div class="m-contents">
-                                            <div class="col-lg-4">
-                                                <a href="#">
-                                                    <img src="images/khaleda.jpg" alt="khaleda" class="img-circle" />
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 m-contents-likha">
-                                                <a href="#">রোহিঙ্গাদের দীর্ঘদিন রাখা সম্ভব নয়: খালেদা জিয়া</a>
-                                            </div>
-                                        </div>
-                                        <div class="m-contents">
-                                            <div class="col-lg-4">
-                                                <a href="#">
-                                                    <img src="images/khaleda.jpg" alt="khaleda" class="img-circle" />
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 m-contents-likha">
-                                                <a href="#">রোহিঙ্গাদের দীর্ঘদিন রাখা সম্ভব নয়: খালেদা জিয়া</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--=======Sakhatkar part start here=========-->
-                            <div class="row">
-                                <div class="sakhatkar">
-                                    <h2 class="text-center">সাক্ষাৎকার</h2>
-                                    <div class="sakhatar-details">
-                                        <div class="row">
-                                            <div class="sakhtatkar-contetn">
-                                                <div class="col-lg-4">
-                                                    <a href="#">
-                                                        <img src="images/mosarof.jpg" alt="" class="img-responsive" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <a href="#">
-                                                        <h4>‘ঢাকার জলাবদ্ধতা কী দেখছেন, কলকাতা-বোম্বে যান’</h4>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="sakhtatkar-contetn">
-                                                <div class="col-lg-4">
-                                                    <a href="#">
-                                                        <img src="images/noname.jpg" alt="" class="img-responsive" />
-                                                    </a>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <a href="#">
-                                                        <h4>পোশাকশিল্পের মালিকেরা অস্বস্তিতে ছিলেন</h4>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--=======Sakhatkar part end here=========-->
-
-
-
-                        <!--Sorborcho Sorbadhik Part start here-->
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="sorbcho-sorbadhik">
-                                    <ul class="nav nav-pills btns nav-justified btns">
-                                        <li class="active"><a data-toggle="tab" href="#home">সর্বশেষ</a></li>
-                                        <li><a data-toggle="tab" href="#menu1">সর্বাধিক</a></li>
-                                    </ul>
-                                    <div class="tab-content text-justify titles">
-                                        <div id="home" class="tab-pane fade in active">
-                                            <div class="list-group titles-items">
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                            </div>
-                                        </div>
-                                        <div id="menu1" class="tab-pane fade">
-                                            <div class="list-group titles-items">
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                                <button type="button" class="list-group-item"><a href="#">বঙ্গবন্ধুর সাতই মার্চের ভাষণ ঐতিহাসিক দলিল</a></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Sorborcho Sorbadhik Part end here-->
-                    </div>
-                </div>
-                <!--$$$$$$$$$$$$$$$  News Protal Right part start here $$$$$$$$$$$$$$$$$$$$-->
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="khali-part">
-        <div class="container">
-            <div class="row">
-                <div class="content">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery link here-->
-    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-
-    <!-- bootstarp min js link here-->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+    <a class="btn btn-small btn-green reply" href="/forum/topic.asp?NewsId=22598&amp;topic_id=60679#reply_form" onclick="$.scrollTo('#reply_form');return false;"> <i class="icon ion-chatbox"></i> Reply </a>
+    <button class="btn btn-small btn-green" onclick="$.dmxPopup.open('/popup/login.asp', { title: 'Login' });">Login to Reply</button> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 </body>
 
 </html>
