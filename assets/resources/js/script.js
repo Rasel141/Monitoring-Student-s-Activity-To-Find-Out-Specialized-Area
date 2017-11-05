@@ -69,8 +69,19 @@ $(function() {
     });
 });
 
+// Show Hide Div Using Local Guardian Name
+$(function() {
+    $("#selectname").change(function() {
+        if ($(this).val() == "O") {
+            $("#inputname").show();
+        } else {
+            $("#inputname").hide();
+        }
+    });
+});
 
-// Only Year Selection
+
+// Only Year Selection start
 $(document).ready(function(e) {
     $('.yearselect').yearselect();
 
@@ -82,8 +93,10 @@ $(document).ready(function(e) {
         order: 'asc'
     });
 });
+// Only Year Selection end
 
-// auto search in subject-list page
+
+// auto search in subject-list page start
 $(function() {
     $('#search').on('keyup', function() {
         var pattern = $(this).val();
@@ -93,3 +106,53 @@ $(function() {
         }).show();
     });
 });
+// auto search in subject-list page end
+
+
+
+// full screen start
+$(function() {
+    // check native support
+    $('#support').text($.fullscreen.isNativelySupported() ? 'supports' : 'doesn\'t support');
+
+    // open in fullscreen
+    $('#fullscreen .requestfullscreen').click(function() {
+        $('#fullscreen').fullscreen();
+        return false;
+    });
+
+    // exit fullscreen
+    $('#fullscreen .exitfullscreen').click(function() {
+        $.fullscreen.exit();
+        return false;
+    });
+
+    // document's event
+    $(document).bind('fscreenchange', function(e, state, elem) {
+        // if we currently in fullscreen mode
+        if ($.fullscreen.isFullScreen()) {
+            $('#fullscreen .requestfullscreen').hide();
+            $('#fullscreen .exitfullscreen').show();
+        } else {
+            $('#fullscreen .requestfullscreen').show();
+            $('#fullscreen .exitfullscreen').hide();
+        }
+
+        $('#state').text($.fullscreen.isFullScreen() ? '' : 'not');
+    });
+});
+
+// full screen end
+
+
+// add extra-cur reward button start
+$(function() {
+    $("input[name='chkPassPort']").click(function() {
+        if ($("#chkYes").is(":checked")) {
+            $("#dvPassport").show();
+        } else {
+            $("#dvPassport").hide();
+        }
+    });
+});
+// add extra-cur reward button end

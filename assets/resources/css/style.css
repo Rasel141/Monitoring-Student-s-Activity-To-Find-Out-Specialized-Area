@@ -477,7 +477,8 @@ CONTENT SECTION
 
 .searchable-container label.btn-default.active {
     background-color: #007ba7;
-    color: #FFF
+    color: #FFF;
+    color: #
 }
 
 .searchable-container label.btn-default {
@@ -514,7 +515,7 @@ CONTENT SECTION
 /* extra curricular-activities  */
 
 .game-type {
-    margin: 0 20px 20px 0;
+    /* margin: 0 20px 20px 0; */
 }
 
 .badgebox {
@@ -534,10 +535,28 @@ CONTENT SECTION
     text-indent: 0;
 }
 
-.game-image {
+
+/* .game-image {
     width: 150px;
     height: 100px;
-}
+    margin-left: -6px;
+} */
 
 
 /* extra curricular-activities  */
+
+
+/*full screen start  */
+
+.fullscreen {
+    float: right;
+}
+
+.fullscreen span {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 35px 10px 10px;
+}
+
+
+/* full screen end  */
