@@ -18,7 +18,33 @@
 
     <!-- Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <style>
+        .form-group input[type="checkbox"] {
+            display: none;
+        }
+        
+        .form-group input[type="checkbox"]+.btn-group>label span {
+            width: 20px;
+        }
+        
+        .form-group input[type="checkbox"]+.btn-group>label span:first-child {
+            display: none;
+        }
+        
+        .form-group input[type="checkbox"]+.btn-group>label span:last-child {
+            display: inline-block;
+        }
+        
+        .form-group input[type="checkbox"]:checked+.btn-group>label span:first-child {
+            display: inline-block;
+        }
+        
+        .form-group input[type="checkbox"]:checked+.btn-group>label span:last-child {
+            display: none;
+        }
+    </style>
 
 
 
@@ -137,154 +163,132 @@
                 <!--/ .breadcrumb  -->
 
                 <div class="x-panel">
-
                     <div class="panel panel-primary">
-                        <div class="clearfix"></div>
-                        <div class="panel-heading">Add Mark</div>
+                        <div class="panel-heading">Add Subject</div>
                         <div class="panel-body">
 
                             <form>
-                                <div class="container panel-content">
-                                    <div class="row ">
-
-                                        <div class="table-responsive col-md-12">
-
-                                            <table id="sort2" class=" table table-bordered table-striped  table-hover">
-
-                                                <thead>
-                                                    <tr class="bg-info">
-                                                        <th>Game Type</th>
-                                                        <th>Game Name</th>
-                                                        <th>Place</th>
-                                                        <th>Reward</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Indoor</td>
-                                                        <td><input type="text" class="form-control" value="Ludo" readonly></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter your  place name.."></td>
-                                                        <td>
-                                                            <select class="form-control" id="selectname">
-                                                                <option>Select Reward</option>
-                                                                <option>1st</option>
-                                                                <option>2nd</option>
-                                                                <option>3rd</option>
-                                                                <option>4th</option>
-                                                                <option>5th</option>
-                                                                <option>6th</option>
-                                                                <option>7th</option>
-                                                                <option>8th</option>
-                                                                <option>9th</option>
-                                                                <option>10th</option>
-                                                                <option value="O">Other's</option>
-                                                            </select>
-                                                        </td>
-                                                        <td style="display: none" id="inputname"><input type="text" value="" class="form-control" placeholder="Enter Reward position.."></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Indoor</td>
-                                                        <td><input type="text" class="form-control" value="Caram" readonly></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter your  place name.."></td>
-                                                        <td>
-                                                            <select class="form-control" id="selectname">
-                                                                <option>Select Reward</option>
-                                                                <option>1st</option>
-                                                                <option>2nd</option>
-                                                                <option>3rd</option>
-                                                                <option>4th</option>
-                                                                <option>5th</option>
-                                                                <option>6th</option>
-                                                                <option>7th</option>
-                                                                <option>8th</option>
-                                                                <option>9th</option>
-                                                                <option>10th</option>
-                                                                <option value="O">Other's</option>
-                                                            </select>
-                                                        </td>
-                                                        <!-- <td style="display: none" id="inputname"><input type="text" value="" class="form-control" placeholder="Enter Reward position.."></td> -->
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Indoor</td>
-                                                        <td><input type="text" class="form-control" value="Pool" readonly></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter your  place name.."></td>
-                                                        <td>
-                                                            <select class="form-control" id="selectname">
-                                                                <option>Select Reward</option>
-                                                                <option>1st</option>
-                                                                <option>2nd</option>
-                                                                <option>3rd</option>
-                                                                <option>4th</option>
-                                                                <option>5th</option>
-                                                                <option>6th</option>
-                                                                <option>7th</option>
-                                                                <option>8th</option>
-                                                                <option>9th</option>
-                                                                <option>10th</option>
-                                                                <option value="O">Other's</option>
-                                                            </select>
-                                                        </td>
-                                                        <td style="display: none" id="inputname"><input type="text" value="" class="form-control" placeholder="Enter Reward position.."></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Outdoor</td>
-                                                        <td><input type="text" class="form-control" value="Cricket" readonly></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter your  place name.."></td>
-                                                        <td>
-                                                            <select class="form-control" id="selectname">
-                                                                <option>Select Reward</option>
-                                                                <option>1st</option>
-                                                                <option>2nd</option>
-                                                                <option>3rd</option>
-                                                                <option>4th</option>
-                                                                <option>5th</option>
-                                                                <option>6th</option>
-                                                                <option>7th</option>
-                                                                <option>8th</option>
-                                                                <option>9th</option>
-                                                                <option>10th</option>
-                                                                <option value="O">Other's</option>
-                                                            </select>
-                                                        </td>
-                                                        <td style="display: none" id="inputname"><input type="text" value="" class="form-control" placeholder="Enter Reward position.."></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Outdoor</td>
-                                                        <td><input type="text" class="form-control" value="Hockey" readonly></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter your  place name.."></td>
-                                                        <td>
-                                                            <select class="form-control" id="selectname">
-                                                                <option>Select Reward</option>
-                                                                <option>1st</option>
-                                                                <option>2nd</option>
-                                                                <option>3rd</option>
-                                                                <option>4th</option>
-                                                                <option>5th</option>
-                                                                <option>6th</option>
-                                                                <option>7th</option>
-                                                                <option>8th</option>
-                                                                <option>9th</option>
-                                                                <option>10th</option>
-                                                                <option value="O">Other's</option>
-                                                            </select>
-                                                        </td>
-                                                        <td style="display: none" id="inputname"><input type="text" value="" class="form-control" placeholder="Enter Reward position.."></td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                            <div class="form-group">
-                                                <a href="view-extra-curr.html" class="btn btn-success button" role="button">Save</a>
-                                            </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Subject Name</label>
+                                            <input type="text" class="form-control" placeholder="Subject Name">
                                         </div>
-                                        <!--/.table-responsive  -->
-
                                     </div>
-                                    <!--/.row  -->
-                                </div>
-                                <!--/.container  -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Class</label>
 
+                                            <div id="checkboxes">
+                                                <!--========= Group 1 part start here =========-->
+                                                <section>
+                                                    <h4>Category 1 </h4>
+                                                    <label class="selectAllLabel" class="checkbox-inline">
+                                                        <input type="checkbox" id="selectAllGroup1"/>Select All
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group1_a" name="group1" value="1a"/>1
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group1_b" name="group1" value="1b"/>2
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>3
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>4
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>5
+                                                    </label>
+                                                </section>
+                                                <!--========= Group 1 part End here =========-->
+
+                                                <!--========= Group 2 part start here =========-->
+                                                <section>
+                                                    <h3>Category 2</h3>
+
+                                                    <label class="selectAllLabel" class="checkbox-inline">
+                                                        <input type="checkbox" id="selectAllGroup2"/>Select All
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group2_a" name="group2" value="2a"/>6
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group2_b" name="group2" value="2b"/>7
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group2_c" name="group2" value="2c"/>8
+                                                    </label>
+                                                </section>
+                                                <!--========= Group 2 part End here =========-->
+
+                                                <!--========= Group 3 part start here =========-->
+                                                <section>
+
+                                                    <h3>Category 3</h3>
+                                                    <div class="[ form-group ]">
+                                                        <input type="checkbox" name="fancy-checkbox-primary-custom-icons" id="fancy-checkbox-primary-custom-icons" autocomplete="off" />
+                                                        <div class="[ btn-group ]">
+                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-primary ]">
+                                                                <span class="[ glyphicon glyphicon-plus ]"></span>
+                                                                <span class="[ glyphicon glyphicon-minus ]"></span>
+                                                            </label>
+                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-default active ]" class="selectAllLabel" class="checkbox-inline">
+                                                                <input type="checkbox" id="selectAllGroup3"/>Select All     
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="[ form-group ]">
+                                                        <input type="checkbox" name="fancy-checkbox-primary-custom-icons" id="fancy-checkbox-primary-custom-icons" autocomplete="off" />
+                                                        <div class="[ btn-group ]">
+                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-primary ]">
+                                                                <span class="[ glyphicon glyphicon-plus ]"></span>
+                                                                <span class="[ glyphicon glyphicon-minus ]"></span>
+                                                            </label>
+                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-default active ]" class="checkbox-inline">
+                                                                 <input type="checkbox" id="group3_a" name="group3" value="3a"/>9     
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- <label class="selectAllLabel" class="checkbox-inline">
+                                                       <input type="checkbox" id="selectAllGroup3"/>Select All     
+                                                    </label>
+
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group3_a" name="group3" value="3a"/>9
+                                                    </label>
+
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" id="group3_b" name="group3" value="3b"/>10
+                                                    </label> -->
+
+                                                </section>
+                                                <!--========= Group 3 part End here =========-->
+
+
+                                            </div>
+                                            <!--/ #checkboxes  -->
+                                            <!--========= Subject Add part End here =========-->
+
+                                        </div>
+                                        <!--/.form-group  -->
+                                    </div>
+                                    <!--/.col-md-12  -->
+                                </div>
+                                <!--/.row  -->
                             </form>
 
                         </div>
@@ -318,6 +322,11 @@
     <script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"></script>
     <!-- Year selection dropdown   -->
     <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
+    <!--Full Screeen  -->
+    <script type="text/javascript" src="assets/vendors/js/jquery.fullscreen.min.js"></script>
+    <!--select all checkbox  -->
+    <script type="text/javascript" src="assets/vendors/js/jquery.selectallcheckbox.min.js"></script>
+
     <!--Custom JS  -->
     <script type="text/javascript " src="assets/resources/js/script.js "></script>
 

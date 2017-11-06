@@ -512,38 +512,28 @@ CONTENT SECTION
 /* subject-list page end */
 
 
-/* extra curricular-activities  */
+/* add-subject page start  */
 
-.game-type {
-    /* margin: 0 20px 20px 0; */
-}
-
-.badgebox {
+.btn span.glyphicon {
     opacity: 0;
 }
 
-.badgebox+.badge {
-    text-indent: -999999px;
-    width: 30px;
+.btn.active span.glyphicon {
+    opacity: 1;
 }
 
-.badgebox:focus+.badge {
-    box-shadow: inset 0px 0px 5px;
+.button-group {
+    padding: 0px 20px;
 }
 
-.badgebox:checked+.badge {
-    text-indent: 0;
+.button-cls {
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 
-/* .game-image {
-    width: 150px;
-    height: 100px;
-    margin-left: -6px;
-} */
-
-
-/* extra curricular-activities  */
+/* add subject page end  */
 
 
 /*full screen start  */

@@ -145,14 +145,6 @@ $(function() {
 // full screen end
 
 
-// add extra-cur reward button start
-$(function() {
-    $("input[name='chkPassPort']").click(function() {
-        if ($("#chkYes").is(":checked")) {
-            $("#dvPassport").show();
-        } else {
-            $("#dvPassport").hide();
-        }
-    });
-});
-// add extra-cur reward button end
+// add subject page start
+
+// add subject page end
