@@ -153,7 +153,7 @@ CUSTOMIZE BOOTSTRAP
 }
 
 
-/* search bar  */
+/* search bar start */
 
 .input-group {
     position: static;
@@ -176,17 +176,38 @@ CUSTOMIZE BOOTSTRAP
 }
 
 
-/* search bar  */
+/* search bar end  */
 
 
-/* form  input  */
+/* form  input start */
 
 .form-control:focus {
     box-shadow: none;
 }
 
 
-/* form  input  */
+/* form  input end */
+
+
+/* overall customize start  */
+
+.panel-heading {
+    font-family: teko;
+    font-size: 150%;
+    text-shadow: 1px 1px 4px #000;
+}
+
+label {
+    font-family: oleo;
+    font-size: 115%;
+}
+
+.form-control {
+    font-family: oleo;
+}
+
+
+/* overall customize end  */
 
 
 /* ==============================
@@ -226,9 +247,9 @@ SIDEBAR SECTION
 }
 
 .logo img {
-    width: 55%;
-    height: 60px;
-    margin-left: 23%;
+    width: 200px;
+    height: 50px;
+    margin: 5px 0 0 26px;
 }
 
 .link:hover {
@@ -250,6 +271,8 @@ SIDEBAR SECTION
 .accordion {
     position: relative;
     top: 50px;
+    font-family: oleo;
+    font-size: 110%;
 }
 
 .accordion li:last-child .link {
@@ -478,7 +501,6 @@ CONTENT SECTION
 .searchable-container label.btn-default.active {
     background-color: #007ba7;
     color: #FFF;
-    color: #
 }
 
 .searchable-container label.btn-default {
@@ -514,11 +536,11 @@ CONTENT SECTION
 
 /* add-subject page start  */
 
-.btn span.glyphicon {
+label.btn span.glyphicon {
     opacity: 0;
 }
 
-.btn.active span.glyphicon {
+label.btn.active span.glyphicon {
     opacity: 1;
 }
 
