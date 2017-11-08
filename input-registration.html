@@ -48,30 +48,24 @@
             <!--/logo  -->
             <ul id="accordion" class="accordion">
                 <li>
-                    <div class="link"><i class="fa fa-database"></i>Registration<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-database"></i>Student Information<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="input-registration.html">Registration Student</a></li>
+                        <li><a href="input-registration.html">New Student</a></li>
+                        <li><a href="input-registration.html">Verify Student</a></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="link"><i class="fa fa-code"></i>Entry<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-code"></i>Student Performance Entry<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="search-info-for-mark.html">Mark Entry</a></li>
-                        <li><a href="search-info-for-extra-curr.html">Extra Curricular Activities</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="link"><i class="fa fa-mobile"></i>Show<i class="fa fa-chevron-down"></i></div>
-                    <ul class="submenu">
-                        <li><a href="#">Result</a></li>
-                        <li><a href="#">Extra Curricular Activities</a></li>
+                        <li><a href="search-info-for-mark.html">Marks</a></li>
+                        <li><a href="search-info-for-extra-curr.html">Extra Curriculum</a></li>
                     </ul>
                 </li>
                 <li>
                     <div class="link"><i class="fa fa-globe"></i>Other's<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="#">Add Subject</a></li>
-                        <li><a href="#">Add Extra Curricular</a></li>
+                        <li><a href="add-subject-name.html">New Subject Entry</a></li>
+                        <li><a href="add-extra-curr-name.html">New Extra Curriculum Entry</a></li>
                     </ul>
                 </li>
             </ul>
@@ -134,21 +128,21 @@
 
                 <div class="x-panel">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Add Student Information</div>
+                        <div class="panel-heading">Add New Student Information</div>
                         <div class="panel-body">
 
-                            <form>
+                            <form id="registration-form" method="POST" action="">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" placeholder="Your Name">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Class</label>
-                                            <select class="form-control">
+                                            <label for="class">Class</label>
+                                            <select class="form-control" id="class" name="class">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -167,29 +161,14 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Roll</label>
-                                            <input type="number" class="form-control" placeholder="Your Roll">
+                                            <label for="roll">Roll</label>
+                                            <input type="number" class="form-control" id="roll" name="roll" placeholder="Your Roll">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Section</label>
-                                            <input type="text" class="form-control" placeholder="Your Section">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label> Year</label>
-                                            <input class="yearselect sample form-control" name="sample" id="sample" value="2017">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Father's Name</label>
-                                            <input type="text" class="form-control" placeholder="Your Father's Name">
+                                            <label for="section">Section</label>
+                                            <input type="text" class="form-control" id="section" name="section" placeholder="Your Section">
                                         </div>
                                     </div>
                                 </div>
@@ -197,14 +176,14 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Mother's Name</label>
-                                            <input type="text" class="form-control" placeholder="Your Mother's Name">
+                                            <label for="year"> Year</label>
+                                            <input class="yearselect sample form-control" name="year" id="year" value="2017">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Student Birth Certificate No.</label>
-                                            <input type="text" class="form-control" placeholder="Your Birth Certificate No.">
+                                            <label for="fName">Father's Name</label>
+                                            <input type="text" class="form-control" id="fName" name="fName" placeholder="Your Father's Name">
                                         </div>
                                     </div>
                                 </div>
@@ -212,8 +191,23 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Local Guardian Name</label>
-                                            <select class="form-control" id="selectname">
+                                            <label for="mName">Mother's Name</label>
+                                            <input type="text" class="form-control" id="mName" name="mName" placeholder="Your Mother's Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="sBirthNo">Student Birth Certificate No.</label>
+                                            <input type="text" class="form-control" id="sBirthNo" name="sBirthNo" placeholder="Your Birth Certificate No.">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="selectname">Local Guardian Name</label>
+                                            <select class="form-control" id="selectname" name="selectname">
                                                 <option>Select Guardian</option>
                                                 <option value="F">Father</option>
                                                 <option value="M">Mother</option>
@@ -223,8 +217,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Father/Mother/Guardian NID No.</label>
-                                            <select class="form-control" id="selectnid">
+                                            <label for="selectnid">Father/Mother/Guardian NID No.</label>
+                                            <select class="form-control" id="selectnid" name="selectnid">
                                                 <option>Select F/M/G</option>
                                                 <option value="F">Father</option>
                                                 <option value="M">Mother</option>
@@ -236,25 +230,25 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group" id="inputname" style="display: none">
-                                            <label></label>
-                                            <input type="text" class="form-control" placeholder="Other's Guardian Name">
+                                            <label for="oName"></label>
+                                            <input type="text" class="form-control" id="oName" name="oName" placeholder="Other's Guardian Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group" id="inputnid" style="display: none">
-                                            <label></label>
-                                            <input type="text" class="form-control" placeholder="NID No.">
+                                            <label for="nid"></label>
+                                            <input type="text" class="form-control" id="nid" name="nid" placeholder="NID No.">
                                         </div>
                                     </div>
                                 </div>
-
-
 
 
                                 <div class="form-group">
                                     <a href="view-registration.html" class="btn btn-success button" role="button">Save</a>
                                 </div>
+
                             </form>
+
                         </div>
                         <!--/ .panel-body  -->
                     </div>
@@ -291,7 +285,6 @@
 
 
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
     <!-- Bootstrap tooltips -->
@@ -301,8 +294,12 @@
     <script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"></script>
     <!-- Year selection dropdown   -->
     <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
+    <!--Full Screeen  -->
+    <script type="text/javascript" src="assets/vendors/js/jquery.fullscreen.min.js"></script>
+
     <!--Custom JS  -->
     <script type="text/javascript " src="assets/resources/js/script.js "></script>
+
 
 
 

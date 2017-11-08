@@ -143,8 +143,3 @@ $(function() {
 });
 
 // full screen end
-
-
-// add subject page start
-
-// add subject page end
