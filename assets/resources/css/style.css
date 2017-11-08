@@ -66,6 +66,7 @@ a:hover {
 
 .panel-content {
     width: 100%;
+    font-family: sans-serif;
 }
 
 
@@ -194,12 +195,13 @@ CUSTOMIZE BOOTSTRAP
 .panel-heading {
     font-family: teko;
     font-size: 150%;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 0px 0px 2px #000;
 }
 
 label {
     font-family: oleo;
     font-size: 115%;
+    font-weight: 300;
 }
 
 .form-control {
@@ -477,7 +479,7 @@ CONTENT SECTION
 =================================*/
 
 .content {
-    background: #fff;
+    /* background: #fff; */
     margin: 80px 20px 0px 0px;
     padding: 20px;
     width: 100%;
@@ -567,7 +569,7 @@ label.btn.active span.glyphicon {
 .fullscreen span {
     color: #fff;
     font-size: 20px;
-    padding: 10px 35px 10px 10px;
+    padding: 16px 35px 10px 10px;
 }
 
 
