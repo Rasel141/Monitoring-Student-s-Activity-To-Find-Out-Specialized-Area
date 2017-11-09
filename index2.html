@@ -20,42 +20,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-    <style>
-        .form-group input[type="checkbox"] {
-            display: none;
-        }
-        
-        .form-group input[type="checkbox"]+.btn-group>label span {
-            width: 20px;
-        }
-        
-        .form-group input[type="checkbox"]+.btn-group>label span:first-child {
-            display: none;
-        }
-        
-        .form-group input[type="checkbox"]+.btn-group>label span:last-child {
-            display: inline-block;
-        }
-        
-        .form-group input[type="checkbox"]:checked+.btn-group>label span:first-child {
-            display: inline-block;
-        }
-        
-        .form-group input[type="checkbox"]:checked+.btn-group>label span:last-child {
-            display: none;
-        }
-    </style>
 
 
-
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -71,30 +37,24 @@
             <!--/logo  -->
             <ul id="accordion" class="accordion">
                 <li>
-                    <div class="link"><i class="fa fa-database"></i>Registration<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-database"></i>Student Information<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="input-registration.html">Registration Student</a></li>
+                        <li><a href="input-registration.html">New Student</a></li>
+                        <li><a href="input-registration.html">Verify Student</a></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="link"><i class="fa fa-code"></i>Entry<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-code"></i>Student Performance Entry<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="search-info-for-mark.html">Mark Entry</a></li>
-                        <li><a href="search-info-for-extra-curr.html">Extra Curricular Activities</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="link"><i class="fa fa-mobile"></i>Show<i class="fa fa-chevron-down"></i></div>
-                    <ul class="submenu">
-                        <li><a href="#">Result</a></li>
-                        <li><a href="#">Extra Curricular Activities</a></li>
+                        <li><a href="search-info-for-mark.html">Marks</a></li>
+                        <li><a href="search-info-for-extra-curr.html">Extra Curriculum</a></li>
                     </ul>
                 </li>
                 <li>
                     <div class="link"><i class="fa fa-globe"></i>Other's<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="#">Add Subject</a></li>
-                        <li><a href="#">Add Extra Curricular</a></li>
+                        <li><a href="add-subject-name.html">New Subject Entry</a></li>
+                        <li><a href="add-extra-curr-name.html">New Extra Curriculum Entry</a></li>
                     </ul>
                 </li>
             </ul>
@@ -118,6 +78,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
 
                         </div>
                         <!-- Header Toggle  -->
@@ -154,143 +115,74 @@
 
             <!--========= Content part Start here =========-->
             <div class="content">
-                <!--breadcrumb  -->
-                <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Library</a></li>
-                    <li class="active">Data</li>
-                </ol>
-                <!--/ .breadcrumb  -->
+
+                <!--success alert message  -->
+                <div class="alert alert-success">
+                    <strong>Congratulation!</strong> Your ID is Year-Class-Roll-Sec
+                </div>
+                <!--success alert message  -->
 
                 <div class="x-panel">
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Add Subject</div>
+                        <div class="panel-heading">Show Student Information</div>
                         <div class="panel-body">
-
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Subject Name</label>
-                                            <input type="text" class="form-control" placeholder="Subject Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Class</label>
-
-                                            <div id="checkboxes">
-                                                <!--========= Group 1 part start here =========-->
-                                                <section>
-                                                    <h4>Category 1 </h4>
-                                                    <label class="selectAllLabel" class="checkbox-inline">
-                                                        <input type="checkbox" id="selectAllGroup1"/>Select All
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group1_a" name="group1" value="1a"/>1
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group1_b" name="group1" value="1b"/>2
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>3
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>4
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group1_c" name="group1" value="1c"/>5
-                                                    </label>
-                                                </section>
-                                                <!--========= Group 1 part End here =========-->
-
-                                                <!--========= Group 2 part start here =========-->
-                                                <section>
-                                                    <h3>Category 2</h3>
-
-                                                    <label class="selectAllLabel" class="checkbox-inline">
-                                                        <input type="checkbox" id="selectAllGroup2"/>Select All
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group2_a" name="group2" value="2a"/>6
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group2_b" name="group2" value="2b"/>7
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group2_c" name="group2" value="2c"/>8
-                                                    </label>
-                                                </section>
-                                                <!--========= Group 2 part End here =========-->
-
-                                                <!--========= Group 3 part start here =========-->
-                                                <section>
-
-                                                    <h3>Category 3</h3>
-                                                    <div class="[ form-group ]">
-                                                        <input type="checkbox" name="fancy-checkbox-primary-custom-icons" id="fancy-checkbox-primary-custom-icons" autocomplete="off" />
-                                                        <div class="[ btn-group ]">
-                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-primary ]">
-                                                                <span class="[ glyphicon glyphicon-plus ]"></span>
-                                                                <span class="[ glyphicon glyphicon-minus ]"></span>
-                                                            </label>
-                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-default active ]" class="selectAllLabel" class="checkbox-inline">
-                                                                <input type="checkbox" id="selectAllGroup3"/>Select All     
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="[ form-group ]">
-                                                        <input type="checkbox" name="fancy-checkbox-primary-custom-icons" id="fancy-checkbox-primary-custom-icons" autocomplete="off" />
-                                                        <div class="[ btn-group ]">
-                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-primary ]">
-                                                                <span class="[ glyphicon glyphicon-plus ]"></span>
-                                                                <span class="[ glyphicon glyphicon-minus ]"></span>
-                                                            </label>
-                                                            <label for="fancy-checkbox-primary-custom-icons" class="[ btn btn-default active ]" class="checkbox-inline">
-                                                                 <input type="checkbox" id="group3_a" name="group3" value="3a"/>9     
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <!-- <label class="selectAllLabel" class="checkbox-inline">
-                                                       <input type="checkbox" id="selectAllGroup3"/>Select All     
-                                                    </label>
-
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group3_a" name="group3" value="3a"/>9
-                                                    </label>
-
-                                                    <label class="checkbox-inline">
-                                                        <input type="checkbox" id="group3_b" name="group3" value="3b"/>10
-                                                    </label> -->
-
-                                                </section>
-                                                <!--========= Group 3 part End here =========-->
-
-
-                                            </div>
-                                            <!--/ #checkboxes  -->
-                                            <!--========= Subject Add part End here =========-->
-
-                                        </div>
-                                        <!--/.form-group  -->
-                                    </div>
-                                    <!--/.col-md-12  -->
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">ID</label>
+                                    <label class="col-sm-2 control-label"><strong>2010-05-32-02</strong></label>
                                 </div>
-                                <!--/.row  -->
-                            </form>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Name</label>
+                                    <label class="col-sm-2 control-label"><strong>Chandler Bailey</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Class</label>
+                                    <label class="col-sm-2 control-label"><strong>05</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Roll</label>
+                                    <label class="col-sm-2 control-label"><strong>32</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Section</label>
+                                    <label class="col-sm-2 control-label"><strong>B</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Year</label>
+                                    <label class="col-sm-2 control-label"><strong>2010</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Father's Name</label>
+                                    <label class="col-sm-2 control-label"><strong>Sharon Wilkinson</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Mother's Name</label>
+                                    <label class="col-sm-2 control-label"><strong>Wilfredo</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Local Guardian Name </label>
+                                    <label class="col-sm-2 control-label"><strong>Chandler BaileyTravis Mueller</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Student Birth Certificate No.</label>
+                                    <label class="col-sm-2 control-label"><strong>19917613310011755</strong></label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Local Guardian NID</label>
+                                    <label class="col-sm-2 control-label"><strong>2610413965404</strong></label>
+                                </div>
+                                <div class="flex-container">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div style="align-self: center">3</div>
+                                    <div>4</div>
+                                </div>
 
+                                <div class="form-group">
+                                    <a href="index.html" class="btn btn-success button" role="button">Ok</a>
+                                    <a href="input-registration.html" class="btn button button-unique" role="button">Update</a>
+                                </div>
+                            </form>
                         </div>
                         <!--/ .panel-body  -->
                     </div>
@@ -313,6 +205,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
     <!-- Bootstrap tooltips -->
@@ -324,11 +231,10 @@
     <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
     <!--Full Screeen  -->
     <script type="text/javascript" src="assets/vendors/js/jquery.fullscreen.min.js"></script>
-    <!--select all checkbox  -->
-    <script type="text/javascript" src="assets/vendors/js/jquery.selectallcheckbox.min.js"></script>
 
     <!--Custom JS  -->
     <script type="text/javascript " src="assets/resources/js/script.js "></script>
+
 
 
 

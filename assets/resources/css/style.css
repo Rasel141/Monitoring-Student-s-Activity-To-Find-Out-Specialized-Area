@@ -632,3 +632,44 @@ label.btn.active span.glyphicon {
 
 
 /* full screen end  */
+
+
+/*view-registration  */
+
+.flex-container {}
+
+.info-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    font-family: sans-serif;
+}
+
+.info-row {
+    display: flex;
+    padding: 5px;
+}
+
+.info-row label {
+    flex: 2;
+}
+
+.info-row span {
+    flex: .5;
+}
+
+.info-row strong {
+    flex: 6;
+    font-family: sans-serif;
+}
+
+.flex-first-row {
+    background: #F5F5F5;
+}
+
+.flex-second-row {
+    background: #FEFEFE;
+}
+
+
+/*view-registration  */

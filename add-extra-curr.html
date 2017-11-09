@@ -123,6 +123,12 @@
                 </div>
                 <!--Info Panel  -->
 
+                <!--warning message  -->
+                <div class="alert alert-warning">
+                    <strong>Input Error!</strong> Please fill out all field.
+                </div>
+                <!--warning message  -->
+
                 <div class="x-panel">
 
                     <div class="panel panel-primary">
@@ -186,16 +192,44 @@
 
                                                 </tbody>
                                             </table>
-                                            <div class="form-group">
-                                                <a href="view-extra-curr.html" class="btn btn-success button" role="button">Save</a>
+                                            <!-- <div class="form-group">
                                                 <a href="list-of-extra-curr.html" class="btn button button-green" role="button">Back</a>
-
-                                            </div>
+                                                <a href="view-extra-curr.html" class="btn btn-success button" role="button">Save</a>
+                                            </div> -->
                                         </div>
                                         <!--/.table-responsive  -->
 
                                     </div>
                                     <!--/.row  -->
+
+                                    <a href="list-of-extra-curr.html" class="btn button button-green" role="button">Back</a>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Save</button>
+
+                                    <!-- modal -->
+                                    <div class="modal fade " id="myModal" role="dialog">
+                                        <div class="modal-dialog  ">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header  bg-primary">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">Do you want to Save?</h4>
+                                                </div>
+                                                <!-- <div class="modal-body">
+                                                <p>Do you want to Save?</p>
+                                            </div> -->
+                                                <div class="modal-footer">
+                                                    <a href="search-info-for-extra-curr.html" class="btn btn-info" role="button">Yes</a>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+
+                                                </div>
+                                            </div>
+                                            <!-- Modal content-->
+
+
+                                        </div>
+                                    </div>
+                                    <!-- /.modal -->
                                 </div>
                                 <!--/.container  -->
 

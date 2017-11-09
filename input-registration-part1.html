@@ -125,6 +125,11 @@
 
             <!--========= Content part Start here =========-->
             <div class="content">
+                <!--warning message  -->
+                <div class="alert alert-warning">
+                    <strong>Input Error!</strong> Please fill out all field.
+                </div>
+                <!--warning message  -->
 
                 <div class="x-panel">
                     <div class="panel panel-primary">
@@ -135,8 +140,8 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                            <label for="year"> Year</label>
+                                            <input class="yearselect sample form-control" name="year" id="year" value="2017">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -173,81 +178,37 @@
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="year"> Year</label>
-                                            <input class="yearselect sample form-control" name="year" id="year" value="2017">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="fName">Father's Name</label>
-                                            <input type="text" class="form-control" id="fName" name="fName" placeholder="Your Father's Name">
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Save</button>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="mName">Mother's Name</label>
-                                            <input type="text" class="form-control" id="mName" name="mName" placeholder="Your Mother's Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="sBirthNo">Student Birth Certificate No.</label>
-                                            <input type="text" class="form-control" id="sBirthNo" name="sBirthNo" placeholder="Your Birth Certificate No.">
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- modal -->
+                                <div class="modal fade " id="myModal" role="dialog">
+                                    <div class="modal-dialog  ">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header  bg-primary">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Do you want to Save?</h4>
+                                            </div>
+                                            <!-- <div class="modal-body">
+                                                <p>Do you want to Save?</p>
+                                            </div> -->
+                                            <div class="modal-footer">
+                                                <a href="input-registration-part2.html" class="btn btn-info" role="button">Yes</a>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="selectname">Local Guardian Name</label>
-                                            <select class="form-control" id="selectname" name="selectname">
-                                                <option>Select Guardian</option>
-                                                <option value="F">Father</option>
-                                                <option value="M">Mother</option>
-                                                <option value="O">Other's</option>
-                                             </select>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="selectnid">Father/Mother/Guardian NID No.</label>
-                                            <select class="form-control" id="selectnid" name="selectnid">
-                                                <option>Select F/M/G</option>
-                                                <option value="F">Father</option>
-                                                <option value="M">Mother</option>
-                                                <option value="G">Local Guardian</option>
-                                             </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group" id="inputname" style="display: none">
-                                            <label for="oName"></label>
-                                            <input type="text" class="form-control" id="oName" name="oName" placeholder="Other's Guardian Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group" id="inputnid" style="display: none">
-                                            <label for="nid"></label>
-                                            <input type="text" class="form-control" id="nid" name="nid" placeholder="NID No.">
-                                        </div>
-                                    </div>
-                                </div>
+                                        <!-- Modal content-->
 
 
-                                <div class="form-group">
-                                    <a href="view-registration.html" class="btn btn-success button" role="button">Save</a>
+                                    </div>
                                 </div>
+                                <!-- /.modal -->
+
 
                             </form>
+
 
                         </div>
                         <!--/ .panel-body  -->
@@ -263,14 +224,6 @@
 
     </div>
     <!--/ #wrapper  -->
-
-
-
-
-
-
-
-
 
 
 
