@@ -110,21 +110,33 @@ a:hover {
 }
 
 
-/* ======= Reusable content =======  */
+/* ==============================
+REUSABLE CONTENT
+=================================*/
 
 
-/* bellow all panel-content */
+/* ======= full screen start =======  */
+
+.fullscreen {
+    float: right;
+}
+
+.fullscreen span {
+    color: #fff;
+    font-size: 20px;
+    padding: 16px 35px 10px 10px;
+}
+
+
+/* ======= full screen end =======  */
+
+
+/* ======= panel-content class start =======  */
 
 .panel-content {
     width: 100%;
     font-family: sans-serif;
 }
-
-
-/* bellow all panel-content */
-
-
-/*custom panel  */
 
 .card-light {
     background-color: #7283A7;
@@ -144,7 +156,7 @@ a:hover {
 }
 
 
-/*custom panel  */
+/* ======= panel-content class end =======  */
 
 
 /* ==============================
@@ -228,7 +240,7 @@ CUSTOMIZE BOOTSTRAP
 }
 
 
-/* search bar start */
+/* ======= search bar start =======  */
 
 .input-group {
     position: static;
@@ -251,20 +263,20 @@ CUSTOMIZE BOOTSTRAP
 }
 
 
-/* search bar end  */
+/* ======= search bar end =======  */
 
 
-/* form  input start */
+/* ======= form  input start =======  */
 
 .form-control:focus {
     box-shadow: none;
 }
 
 
-/* form  input end */
+/* ======= form input end =======  */
 
 
-/* overall customize start  */
+/* ======= Overall Customize start =======  */
 
 .panel-heading {
     font-family: teko;
@@ -284,7 +296,7 @@ label {
 }
 
 
-/* overall customize end  */
+/* ======= Overall Customize end =======  */
 
 
 /* ==============================
@@ -572,7 +584,7 @@ CONTENT SECTION
 }
 
 
-/* subject-list page start */
+/* ======= subject-list page start =======  */
 
 .searchable-container {
     margin: 20px 0px 0 0;
@@ -611,10 +623,10 @@ CONTENT SECTION
 }
 
 
-/* subject-list page end */
+/* ======= subject-list page end =======  */
 
 
-/* add-subject page start  */
+/* ======= add-subject page start =======  */
 
 label.btn span.glyphicon {
     opacity: 0;
@@ -636,26 +648,10 @@ label.btn.active span.glyphicon {
 }
 
 
-/* add subject page end  */
+/* ======= add-subject page end =======  */
 
 
-/*full screen start  */
-
-.fullscreen {
-    float: right;
-}
-
-.fullscreen span {
-    color: #fff;
-    font-size: 20px;
-    padding: 16px 35px 10px 10px;
-}
-
-
-/* full screen end  */
-
-
-/*view-registration  */
+/* ======= view-registration page start =======  */
 
 .flex-container {}
 
@@ -693,4 +689,4 @@ label.btn.active span.glyphicon {
 }
 
 
-/*view-registration  */
+/* ======= view-registration page end =======  */
