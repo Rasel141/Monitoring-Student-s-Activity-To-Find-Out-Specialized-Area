@@ -45,6 +45,26 @@ a:hover {
     font-family: sans-serif;
 }
 
+.back-icon {
+    font-size: 100%;
+    margin-right: 7px;
+}
+
+.next-icon {
+    font-size: 100%;
+    margin-left: 7px;
+}
+
+.save-icon {
+    font-size: 100%;
+    margin-left: 7px;
+}
+
+.ok-icon {
+    font-size: 100%;
+    margin-left: 7px;
+}
+
 .button-small {
     widows: 50px;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
@@ -605,12 +625,13 @@ label.btn.active span.glyphicon {
 }
 
 .button-group {
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
+    display: block;
 }
 
 .button-cls {
-    width: 100px;
-    padding: 15px;
+    width: 100%;
+    padding: 15px 0px;
     margin-bottom: 20px;
 }
 
