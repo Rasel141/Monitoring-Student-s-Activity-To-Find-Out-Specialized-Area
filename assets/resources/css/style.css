@@ -695,3 +695,17 @@ label.btn.active span.glyphicon {
 
 
 /* ======= view-registration page end =======  */
+
+
+/* ======= input-filter page start =======  */
+
+.side-left {
+    margin-left: -15px;
+}
+
+.side-right {
+    margin-left: 15px;
+}
+
+
+/* ======= input-filter page end =======  */

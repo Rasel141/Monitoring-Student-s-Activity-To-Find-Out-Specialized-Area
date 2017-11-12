@@ -136,42 +136,25 @@
                         <div class="panel-heading">Advance Filter</div>
                         <div class="panel-body">
 
-                            <form method="POST" action="" class="form-horizontal">
+                            <form method="POST" action="">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="subject" class="col-md-3">Subject</label>
-                                            <div class="col-md-9">
-                                                <select class="form-control" id="subject" name="subject">
-                                                    <option>Bangla</option>
-                                                    <option>English</option>
-                                                    <option>Math</option>
-                                                    <option>Social Science</option>
-                                                    <option>Science</option>
-                                                    <option>Islam</option>
-                                                 </select>
-                                            </div>
-                                            <!-- <label for="subject" class="col-md-9" style="font-weight:bold">All</label> -->
+                                            <label for="subject">Subject</label>
+                                            <select class="form-control" id="subject" name="subject">
+                                                <option>All</option>
+                                                <option>Single</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="class" class="col-md-3">Class</label>
-                                            <div class="col-md-9">
-                                                <select class="form-control" id="class" name="class">
-                                                    <option>One</option>
-                                                    <option>Two</option>
-                                                    <option>Three</option>
-                                                    <option>Four</option>
-                                                    <option>Five</option>
-                                                    <option>Six</option>
-                                                    <option>Seven</option>
-                                                    <option>Eight</option>
-                                                    <option>Nine</option>
-                                                    <option>Ten</option>
-                                                 </select>
-                                            </div>
-                                            <!-- <label for="subject" class="col-md-9" style="font-weight:bold">All</label> -->
+                                            <label for="class">Class</label>
+                                            <select class="form-control" id="class" name="class">
+                                                <option>All</option>
+                                                <option>Single</option>
+                                                <option>Range</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -179,67 +162,24 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="year" class="col-md-3">Year</label>
-
-                                            <!--Rang year  -->
-                                            <div class="col-md-9">
-                                                <div class="col-md-6">
-                                                    <input class="yearselect sample form-control" name="year" id="year" value="2010">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <input class="yearselect sample form-control" name="year" id="year" value="2017">
-                                                </div>
-                                            </div>
-                                            <!--Rang year  -->
-
-                                            <!--Single year  -->
-                                            <div class="col-md-9" style="display:none">
-                                                <input class="yearselect sample form-control" name="year" id="year" value="2017">
-                                            </div>
-                                            <!--Single year  -->
-
-                                            <!--All  -->
-                                            <!-- <label for="subject" class="col-md-9" style="font-weight:bold">All</label> -->
-                                            <!--All  -->
+                                            <label for="year"> Year</label>
+                                            <select class="form-control" id="year" name="year">
+                                                <option>All</option>
+                                                <option>Single</option>
+                                                <option>Range</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="mark" class="col-md-3">Marks</label>
-
-                                            <!--All  -->
-                                            <!-- <label for="subject" class="col-md-9" style="font-weight:bold">All</label> -->
-                                            <!--All  -->
-
-                                            <!--For Rang  -->
-                                            <div class="col-md-9">
-                                                <div class="col-md-6">
-                                                    <input type="text" class="form-control" id="" placeholder="From">
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <input type="text" class="form-control" id="" placeholder="To">
-                                                </div>
-                                            </div>
-                                            <!--For Rang  -->
-
-                                            <!--For Equal to  -->
-                                            <div class="col-md-9" style="display:none">
-                                                <input type="text" class="form-control" id="" placeholder="Equal To">
-                                            </div>
-                                            <!--For Equal to  -->
-
-                                            <!--Less than Equal to  -->
-                                            <div class="col-md-9" style="display:none">
-                                                <input type="text" class="form-control" id="" placeholder="Less than Equal to">
-                                            </div>
-                                            <!--Less than Equal to  -->
-
-                                            <!--Greater than Equal to  -->
-                                            <div class="col-md-9" style="display:none">
-                                                <input type="text" class="form-control" id="" placeholder="Greater than Equal to">
-                                            </div>
-                                            <!--Greater than Equal to  -->
-
+                                            <label for="mark">Marks</label>
+                                            <select class="form-control" id="mark" name="mark">
+                                                <option>All</option>
+                                                <option>Range</option>
+                                                <option>Equal to</option>
+                                                <option>Less than Equal</option>
+                                                <option>Greater than Equal</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -247,36 +187,26 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="order" class="col-md-3">Order by</label>
-
-                                            <!--Lowest to Highest Mark  -->
-                                            <label for="order" class="col-md-9" style="font-weight:bold">Lowest to Highest Mark</label>
-                                            <!--Lowest to Highest Mark  -->
-
-                                            <!--Highest to Lowest Mark  -->
-                                            <!-- <label for="order" class="col-md-10" style="font-weight:bold">Highest to Lowest Mark</label> -->
-                                            <!--Highest to Lowest Mark  -->
+                                            <label for="order"> Order By</label>
+                                            <select class="form-control" id="order" name="order">
+                                                <option>Lowest to Highest Mark</option>
+                                                <option>Highest to Lowest Mark</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="limit" class="col-md-3">Output Limit</label>
-                                            <div class="col-md-9">
-
-                                                <!-- All -->
-                                                <label for="limit" class="col-md-10" style="font-weight:bold">All</label>
-                                                <!--All  -->
-
-                                                <!-- Maximum -->
-                                                <!-- <label for="limit" class="col-md-10" style="font-weight:bold">All</label> -->
-                                                <!-- Maximum  -->
-                                            </div>
+                                            <label for="output">Output Limit</label>
+                                            <select class="form-control" id="output" name="output">
+                                                <option>All</option>
+                                                <option>Maximum</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
+
 
                                 <!-- Trigger the modal with a button -->
-                                <a href="select-info-for-filter.html" class="btn button button-green" role="button"><i class="fa fa-backward back-icon" aria-hidden="true"></i>Back</a>
                                 <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></button>
 
                                 <!-- modal -->
@@ -292,7 +222,7 @@
                                                 <p>Do you want to Save?</p>
                                             </div> -->
                                             <div class="modal-footer">
-                                                <a href="#" class="btn btn-info" role="button">Yes</a>
+                                                <a href="input-info-for-filter.html" class="btn btn-info" role="button">Yes</a>
                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
 
                                             </div>
@@ -303,8 +233,6 @@
                                     </div>
                                 </div>
                                 <!-- /.modal -->
-
-
                             </form>
 
 
