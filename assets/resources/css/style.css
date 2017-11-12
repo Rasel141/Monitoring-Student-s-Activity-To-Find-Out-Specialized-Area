@@ -22,6 +22,7 @@ body {
     font-size: 15px;
     font-weight: 300;
     width: 100%;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 ul {
@@ -43,6 +44,8 @@ a:hover {
     transition: all 250ms;
     text-transform: uppercase;
     font-family: sans-serif;
+    text-shadow: 2px 0px 0 rgba(0, 0, 0, 0.2);
+    font-weight: bold;
 }
 
 .back-icon {
