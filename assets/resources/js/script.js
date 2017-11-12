@@ -8,6 +8,12 @@ $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
 
+// submenu active
+$('.submenu').on('click', 'li', function() {
+    $('.submenu li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
 
 //Sidebar Dropdown Menu
 $(function() {
@@ -39,6 +45,15 @@ $(function() {
 
     var accordion = new Accordion($('#accordion'), false);
 });
+
+// sidebar
+// $('.accordion').on('click', 'li', function() {
+//     $('.accordion li.open').removeClass('open');
+//     $(this).addClass('open');
+// });
+
+
+
 
 
 
