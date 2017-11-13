@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Rasel, Momit">
+    <title>Student Result Monitoring System</title>
+
+    <!-- Font Awesome -->
+    <link href="assets/vendors/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap vendors -->
+    <link href="assets/vendors/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS   -->
+    <link href="assets/resources/css/style.css" rel="stylesheet">
+
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!--========= Sidebar part start here =========-->
+        <section class="sidebar" id="sidebar">
+            <!--logo  -->
+            <div class="logo">
+                <a href="index.html"><img src="assets/resources/img/logo.png" alt="logo"></a>
+            </div>
+            <!--/logo  -->
+            <ul id="accordion" class="accordion">
+                <li>
+                    <div class="link"><i class="fa fa-database"></i>Student Information<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="input-registration.html">New Student</a></li>
+                        <li><a href="input-registration.html">Verify Student</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-code"></i>Student Performance Entry<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="search-info-for-mark.html">Marks</a></li>
+                        <li><a href="search-info-for-extra-curr.html">Extra Curriculum</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-globe"></i>Other's<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="add-subject-name.html">New Subject Entry</a></li>
+                        <li><a href="add-extra-curr-name.html">New Extra Curriculum Entry</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.accordion  -->
+        </section>
+        <!--========= Sidebar part End here =========-->
+
+
+        <!--page-content  -->
+        <div id="page-content">
+
+            <!--========= Heading part start here =========-->
+            <header>
+                <nav class="nav-section" id="nav-section">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                        </div>
+                        <!-- Header Toggle  -->
+                        <div class="navbar-header" id="sidebarCollapse">
+                            <div class="toggle-btn">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right ">
+                                <li class="dropdown ">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="admin admin-online">
+                                        <img src="assets/resources/img/admin.png" alt="admin"><i></i>
+                                    </span> Admin <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu user">
+                                        <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit Profile</a></li>
+                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> My Account</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!--========= Heading part End here =========-->
+
+            <!--========= Content part Start here =========-->
+            <div class="content">
+
+                <div class="x-panel">
+
+                    <div class="panel panel-primary">
+                        <div class="clearfix"></div>
+                        <div class="panel-heading">View Mark</div>
+                        <div class="panel-body">
+
+                            <form>
+                                <div class="container panel-content">
+                                    <div class="row ">
+
+                                        <div class="table-responsive col-md-12 ">
+
+                                            <table id="sort2" class=" table table-bordered table-striped  table-hover text-center">
+
+                                                <thead>
+                                                    <tr class="bg-info ">
+                                                        <th class="text-center">Student ID</th>
+                                                        <th class="text-center">Class</th>
+                                                        <th class="text-center">Year</th>
+                                                        <th class="text-center">Semester Slot</th>
+                                                        <th class="text-center">Average Mark</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2010-05-32-02</td>
+                                                        <td>Five</td>
+                                                        <td>2010</td>
+                                                        <td>2</td>
+                                                        <td>76%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2010-05-32-02</td>
+                                                        <td>Six</td>
+                                                        <td>2011</td>
+                                                        <td>3</td>
+                                                        <td>69%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2010-05-32-02</td>
+                                                        <td>Seven</td>
+                                                        <td>2012</td>
+                                                        <td>3</td>
+                                                        <td>83%</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                            <div class="form-group">
+                                                <a href="index.html" class="btn btn-success button" role="button">Ok<i class="fa fa-check-square-o ok-icon" aria-hidden="true"></i></a>
+                                                <!-- <a href="input-registration.html" class="btn button button-unique" role="button">Update</a> -->
+                                            </div>
+                                        </div>
+                                        <!--/.table-responsive  -->
+
+                                    </div>
+                                    <!--/.row  -->
+                                </div>
+                                <!--/.container  -->
+
+                            </form>
+
+                        </div>
+                        <!--/ .panel-body  -->
+                    </div>
+                    <!--/.panel  -->
+                </div>
+                <!--/ .x-panel  -->
+            </div>
+            <!--========= Content part End here =========-->
+
+        </div>
+        <!-- /.page-content  -->
+
+    </div>
+    <!--/ #wrapper  -->
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="assets/vendors/js/popper.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--Smooth Transition  -->
+    <script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"></script>
+    <!-- Year selection dropdown   -->
+    <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
+    <!--Full Screeen  -->
+    <script type="text/javascript" src="assets/vendors/js/jquery.fullscreen.min.js"></script>
+
+    <!--Custom JS  -->
+    <script type="text/javascript " src="assets/resources/js/script.js "></script>
+
+
+
+
+
+</body>
+
+</html>
