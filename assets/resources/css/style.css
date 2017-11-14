@@ -254,7 +254,7 @@ SIDEBAR SECTION
     width: 20%;
     height: 100%;
     background-color: #224562;
-    background-image: url(../../vendors/img/sidenav1.jpg);
+    background-image: url(../../vendors/img/sidenav2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -290,7 +290,7 @@ SIDEBAR SECTION
     padding: 12px 15px 12px 42px;
     background: #162029;
     color: #fff;
-    opacity: .6;
+    opacity: .8;
     position: relative;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -342,7 +342,8 @@ SIDEBAR SECTION
 } */
 
 .accordion li.open .link {
-    color: #f1c40f;
+    /* color: #f1c40f; */
+    color: #1ABB9C;
     background: #162029;
     -webkit-box-shadow: rgba(0, 0, 0, .25) 0 1px 0, inset rgba(255, 255, 255, .16) 0 1px 0;
     box-shadow: rgba(0, 0, 0, .25) 0 1px 0, inset rgba(255, 255, 255, .16) 0 1px 0;
@@ -353,7 +354,8 @@ SIDEBAR SECTION
 }
 
 .accordion li.open i {
-    color: #f1c40f;
+    /* color: #f1c40f; */
+    color: #1ABB9C;
 }
 
 .accordion li.open i.fa-chevron-down {
@@ -368,13 +370,14 @@ SIDEBAR SECTION
     display: none;
     font-size: 100%;
     background: #000;
-    opacity: .6;
+    opacity: .8;
     color: #d9d9d9;
 }
 
 .submenu li {
     border-bottom: 1px solid #4b4a5e;
-    border-right: 5px solid #f1c40f;
+    /* border-right: 5px solid #f1c40f; */
+    border-right: 5px solid #1ABB9C;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -391,11 +394,13 @@ SIDEBAR SECTION
 
 .submenu a:hover {
     /* background: #121B22; */
-    color: #f1c40f;
+    /* color: #f1c40f; */
+    color: #1ABB9C;
 }
 
 .submenu li.active a {
-    color: #f1c40f;
+    /* color: #f1c40f; */
+    color: #1ABB9C;
 }
 
 
