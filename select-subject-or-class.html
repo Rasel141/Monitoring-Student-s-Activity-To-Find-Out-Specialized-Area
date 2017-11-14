@@ -22,6 +22,17 @@
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
 
 
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -114,119 +125,97 @@
 
             <!--========= Content part Start here =========-->
             <div class="content">
-                <!--Info Panel  -->
-                <div class="card card-light text-center ">
-                    <div class="card-body">
-                        <label for="">ID: <strong>2010-05-32-02</strong></label>&nbsp;&nbsp;
-                        <label for="">Name: <strong>Marquis</strong></label>
-                    </div>
-                </div>
-                <!--Info Panel  -->
-
                 <!--warning message  -->
                 <div class="alert alert-warning">
-                    <strong>Input Error!</strong> Please fill out all field
+                    <strong>Input Error!</strong> Please fill out all field.
                 </div>
                 <!--warning message  -->
 
                 <div class="x-panel">
-
                     <div class="panel panel-primary">
-                        <div class="clearfix"></div>
-                        <div class="panel-heading">Add Mark</div>
+                        <div class="panel-heading">Advance Filter</div>
                         <div class="panel-body">
 
-                            <form>
-                                <div class="container panel-content">
-                                    <div class="row ">
-
-                                        <div class="table-responsive col-md-12">
-
-                                            <table id="sort2" class=" table table-bordered table-striped  table-hover">
-
-                                                <thead>
-                                                    <tr class="bg-info">
-                                                        <th>Subject</th>
-                                                        <th>Semester 1</th>
-                                                        <th>Semester 2</th>
-                                                        <th>Semester 3</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody style="background:#fff">
-                                                    <tr>
-                                                        <td>Bangla</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>English</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Math</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Social Science</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Science</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Islam</td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                        <td><input type="text" value="" class="form-control" placeholder="Enter mark"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                            <form method="POST" action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-sub button" id="showdiv1">Subject</button>
                                         </div>
-                                        <!--/.table-responsive  -->
-
                                     </div>
-                                    <!--/.row  -->
-                                    <a href="list-of-subject.html" class="btn button button-green" role="button"><i class="fa fa-backward back-icon" aria-hidden="true"></i>Back</a>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-cls button" id="showdiv2">Class</button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <!-- Trigger the modal with a button -->
-                                    <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Save<i class="fa fa-floppy-o save-icon" aria-hidden="true"></i></button>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group" id="div1" style="display:none">
+                                            <label for="subject">Subject</label>
+                                            <select class="form-control" id="showsub" name="subject">
+                                                <option>Bangla</option>
+                                                <option>English</option>
+                                                <option>Math</option>
+                                                <option>Social Science</option>
+                                                <option>Science</option>
+                                                <option>Islam</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <!-- modal -->
-                                    <div class="modal fade " id="myModal" role="dialog">
-                                        <div class="modal-dialog  ">
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header  bg-primary">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h4 class="modal-title">Do you want to Save?</h4>
-                                                </div>
-                                                <!-- <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group" id="div2" style="display:none">
+                                            <label for="class">Class</label>
+                                            <select class="form-control" id="class" name="class">
+                                                <option>One</option>
+                                                <option>Two</option>
+                                                <option>Three</option>
+                                                <option>Four</option>
+                                                <option>Five</option>
+                                                <option>Six</option>
+                                                <option>Seven</option>
+                                                <option>Eight</option>
+                                                <option>Nine</option>
+                                                <option>Ten</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></button>
+
+                                <!-- modal -->
+                                <div class="modal fade " id="myModal" role="dialog">
+                                    <div class="modal-dialog  ">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header  bg-primary">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Do you want to go Next Page?</h4>
+                                            </div>
+                                            <!-- <div class="modal-body">
                                                 <p>Do you want to Save?</p>
                                             </div> -->
-                                                <div class="modal-footer">
-                                                    <a href="search-info-for-mark.html" class="btn btn-info" role="button">Yes</a>
-                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                                            <div class="modal-footer">
+                                                <a href="select-filter-for-sub.html" class="btn btn-info" role="button">Yes</a>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
 
-                                                </div>
                                             </div>
-                                            <!-- Modal content-->
                                         </div>
-                                    </div>
-                                    <!-- /.modal -->
-                                </div>
-                                <!--/.container  -->
+                                        <!-- Modal content-->
 
+
+                                    </div>
+                                </div>
+                                <!-- /.modal -->
                             </form>
+
 
                         </div>
                         <!--/ .panel-body  -->
@@ -250,6 +239,13 @@
 
 
 
+
+
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
     <!-- Bootstrap tooltips -->
@@ -259,8 +255,13 @@
     <script type="text/javascript" src="assets/vendors/js/bootstrap.min.js"></script>
     <!-- Year selection dropdown   -->
     <script type="text/javascript" src="assets/vendors/js/year-select.js"></script>
+    <!--Full Screeen  -->
+    <script type="text/javascript" src="assets/vendors/js/jquery.fullscreen.min.js"></script>
+
     <!--Custom JS  -->
     <script type="text/javascript " src="assets/resources/js/script.js "></script>
+
+
 
 
 

@@ -8,6 +8,7 @@ $('.dropdown').on('hide.bs.dropdown', function() {
     $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
 
+
 // submenu active
 $('.submenu').on('click', 'li', function() {
     $('.submenu li.active').removeClass('active');
@@ -45,14 +46,6 @@ $(function() {
 
     var accordion = new Accordion($('#accordion'), false);
 });
-
-// sidebar
-// $('.accordion').on('click', 'li', function() {
-//     $('.accordion li.open').removeClass('open');
-//     $(this).addClass('open');
-// });
-
-
 
 
 
@@ -94,6 +87,21 @@ $(function() {
         }
     });
 });
+
+
+// Show hide div using subject or class
+$('#showdiv1').click(function() {
+    $('#div2').hide();
+    $('#div1').show();
+});
+$('#showdiv2').click(function() {
+    $('#div1').hide();
+    $('#div2').show();
+});
+
+
+
+
 
 
 // Only Year Selection start
