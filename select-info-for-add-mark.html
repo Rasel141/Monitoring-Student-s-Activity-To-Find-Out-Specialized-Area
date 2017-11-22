@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
 </head>
 
@@ -35,26 +35,40 @@
                 <a href="index.html"><img src="assets/resources/img/logo.png" alt="logo"></a>
             </div>
             <!--/logo  -->
+
             <ul id="accordion" class="accordion">
                 <li>
                     <div class="link"><i class="fa fa-database"></i>Student Information<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
-                        <li><a href="input-registration.html">New Student</a></li>
-                        <li><a href="input-registration.html">Verify Student</a></li>
+                        <li><a href="input-registration-part1.html">New Student</a></li>
+                        <li><a href="search-info-for-reg-view.html">Verify Student</a></li>
                     </ul>
                 </li>
                 <li>
                     <div class="link"><i class="fa fa-code"></i>Student Performance Entry<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
                         <li><a href="search-info-for-mark.html">Marks</a></li>
-                        <li><a href="search-info-for-extra-curr.html">Extra Curriculum</a></li>
+                        <li><a href="search-info-for-extra-curr.html">Extra Curriculur</a></li>
                     </ul>
                 </li>
                 <li>
-                    <div class="link"><i class="fa fa-globe"></i>Other's<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-globe"></i>Subject<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
                         <li><a href="add-subject-name.html">New Subject Entry</a></li>
-                        <li><a href="add-extra-curr-name.html">New Extra Curriculum Entry</a></li>
+                        <li><a href="view-subject-list.html">Subject List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-globe"></i>Extra Curriculur<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="add-extra-curr-name.html">New Extra Curriculur Entry</a></li>
+                        <li><a href="view-extra-curr-list.html">Extra Curriculur List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="link"><i class="fa fa-filter"></i>Filter Student<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li><a href="select-subject-or-class.html">Advance Filter</a></li>
                     </ul>
                 </li>
             </ul>
@@ -163,10 +177,16 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <a href="check-info-for-mark.html" class="btn button button-green " role="button"><i class="fa fa-backward back-icon" aria-hidden="true"></i>Back</a>
-                                    <a href="list-of-subject.html" class="btn btn-success button " role="button">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></a>
+                                    <!-- <a href="check-info-for-mark.html" class="btn button button-green " role="button"><i class="fa fa-backward back-icon" aria-hidden="true"></i>Back</a> -->
+                                    <a href="list-of-subject.html" class="btn btn-success button next-btn " role="button">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></a>
                                 </div>
 
+                            </form>
+                            <form>
+                                <div class="form-group">
+                                    <a href="check-info-for-mark.html" class="btn button button-green back-btn" role="button"><i class="fa fa-backward back-icon" aria-hidden="true"></i>Back</a>
+                                    <!-- <a href="list-of-subject.html" class="btn btn-success button " role="button">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></a> -->
+                                </div>
                             </form>
                         </div>
                         <!--/ .panel-body  -->

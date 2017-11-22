@@ -76,7 +76,6 @@
         </section>
         <!--========= Sidebar part End here =========-->
 
-
         <!--page-content  -->
         <div id="page-content">
 
@@ -128,116 +127,58 @@
 
             <!--========= Content part Start here =========-->
             <div class="content">
-                <!--warning message  -->
-                <div class="alert alert-warning">
-                    <strong>Input Error!</strong> Please fill out all field.
-                </div>
-                <!--warning message  -->
 
                 <div class="x-panel">
+
                     <div class="panel panel-primary">
-                        <div class="panel-heading">Advance Filter</div>
+                        <div class="clearfix"></div>
+                        <div class="panel-heading">List of Game</div>
                         <div class="panel-body">
 
-                            <form method="POST" action="">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="subject">Subject</label>
-                                            <select class="form-control" id="subject" name="subject">
-                                                <option>All</option>
-                                                <option>Single</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="class">Class</label>
-                                            <select class="form-control" id="class" name="class">
-                                                <option>All</option>
-                                                <option>Single</option>
-                                                <option>Range</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                            <form>
+                                <div class="container panel-content">
+                                    <div class="row ">
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="year"> Year</label>
-                                            <select class="form-control" id="year" name="year">
-                                                <option>All</option>
-                                                <option>Single</option>
-                                                <option>Range</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="mark">Marks</label>
-                                            <select class="form-control" id="mark" name="mark">
-                                                <option>All</option>
-                                                <option>Range</option>
-                                                <option>Equal to</option>
-                                                <option>Less than Equal</option>
-                                                <option>Greater than Equal</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <div class="table-responsive col-md-12">
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="order"> Order By</label>
-                                            <select class="form-control" id="order" name="order">
-                                                <option>Lowest to Highest Mark</option>
-                                                <option>Highest to Lowest Mark</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="output">Output Limit</label>
-                                            <select class="form-control" id="output" name="output">
-                                                <option>All</option>
-                                                <option>Maximum</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <table id="sort2" class=" table table-bordered table-striped  table-hover">
 
+                                                <thead>
+                                                    <tr class="bg-info">
+                                                        <th>Game Name</th>
+                                                        <th>Game Type</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody style="background:#fff">
+                                                    <tr>
+                                                        <td>Football</td>
+                                                        <td>Outdoor</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Debate</td>
+                                                        <td>Indoor</td>
+                                                    </tr>
 
-                                <!-- Trigger the modal with a button -->
-                                <button type="button" class="btn btn-success button" data-toggle="modal" data-target="#myModal">Next<i class="fa fa-forward next-icon" aria-hidden="true"></i></button>
-
-                                <!-- modal -->
-                                <div class="modal fade " id="myModal" role="dialog">
-                                    <div class="modal-dialog  ">
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header  bg-primary">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Do you want to go Next Page?</h4>
-                                            </div>
-                                            <!-- <div class="modal-body">
-                                                <p>Do you want to Save?</p>
+                                                </tbody>
+                                            </table>
+                                            <!-- <div class="form-group">
+                                                <a href="list-of-extra-curr.html" class="btn button button-green" role="button">Back</a>
+                                                <a href="view-extra-curr.html" class="btn btn-success button" role="button">Save</a>
                                             </div> -->
-                                            <div class="modal-footer">
-                                                <a href="input-info-for-filter.html" class="btn btn-info" role="button">Yes</a>
-                                                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
-
-                                            </div>
                                         </div>
-                                        <!-- Modal content-->
-
+                                        <!--/.table-responsive  -->
 
                                     </div>
-                                </div>
-                                <!-- /.modal -->
-                            </form>
+                                    <!--/.row  -->
 
+                                    <div class="form-group">
+                                        <a href="index.html" class="btn btn-success button" role="button">Ok<i class="fa fa-check-square-o ok-icon" aria-hidden="true"></i></a>
+                                        <!-- <a href="input-registration.html" class="btn button button-unique" role="button">Update</a> -->
+                                    </div>
+                                </div>
+                                <!--/.container  -->
+
+                            </form>
 
                         </div>
                         <!--/ .panel-body  -->
@@ -261,12 +202,6 @@
 
 
 
-
-
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript " src="assets/vendors/js/jquery.min.js "></script>
     <!-- Bootstrap tooltips -->
@@ -281,7 +216,6 @@
 
     <!--Custom JS  -->
     <script type="text/javascript " src="assets/resources/js/script.js "></script>
-
 
 
 

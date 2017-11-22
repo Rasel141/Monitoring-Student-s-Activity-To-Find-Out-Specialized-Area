@@ -93,10 +93,12 @@ $(function() {
 $('#showdiv1').click(function() {
     $('#div2').hide();
     $('#div1').show();
+    $('#showsub').val("");
 });
 $('#showdiv2').click(function() {
     $('#div1').hide();
     $('#div2').show();
+    $('#class').val("");
 });
 
 
