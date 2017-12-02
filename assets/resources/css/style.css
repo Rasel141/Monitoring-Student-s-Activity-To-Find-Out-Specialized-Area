@@ -81,7 +81,7 @@ a:hover {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
     -webkit-transition: all 250ms;
     -o-transition: all 250ms;
-    transition: all 250ms;   
+    transition: all 250ms;
     text-transform: uppercase;
     font-family: sans-serif;
     text-shadow: 2px 0px 0 rgba(0, 0, 0, 0.2);
@@ -305,29 +305,31 @@ SIDEBAR SECTION
     /* background: rgba(44, 62, 80, .8); */
 }
 
+
 /* .logo img {
     width: 200px;
     height: 50px;
     margin: 5px 0 0 26px;
 } */
-.logo{
-    background: rgba(0,0,0,.4);
+
+.logo {
+    background: rgba(0, 0, 0, .4);
     text-align: center;
     margin: 5px auto;
     width: 95%;
     border: 3px solid #fff0;
     border-radius: 50px;
-    
 }
-.logo-short-form{
+
+.logo-short-form {
     font-family: 'Shrikhand', cursive;
     font-size: 300%;
     /* border-bottom: 5px solid; */
     line-height: 1;
     color: #65ece8;
-    
 }
-.logo-short-form span{
+
+.logo-short-form span {
     color: #fcf8e3;
 }
 
@@ -420,7 +422,7 @@ SIDEBAR SECTION
 .accordion li.open i.fa-chevron-down {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 
@@ -807,7 +809,7 @@ label.btn.active span.glyphicon {
     transition: 0.5s;
 }
 
-.details-icon:hover span{
+.details-icon:hover span {
     padding-right: 25px;
 }
 
